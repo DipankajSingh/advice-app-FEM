@@ -16,9 +16,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 ![](./Screenshot-desktop.png)
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://adviceappfem.netlify.app/](https://adviceappfem.netlify.app/)
 
 ### Built with
 
