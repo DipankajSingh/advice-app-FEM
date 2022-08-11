@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-Light-Cyan: hsl(193, 38%, 86%);
+    --primary-Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --font-size: 28px;
+    --font-family: 'Manrope', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Dark-Blue);
+}
+
+.main-container {
+    position: relative;
+    min-height: 290px;
+    height: max-content;
+    width: 430px;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 20px;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.advice-id {
+    font-size: calc(var(--font-size) - 15px);
+    margin: 15px 0;
+    color: var(--primary-Neon-Green);
+    font-family: var(--font-family);
+}
+
+.advice-text {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--primary-Light-Cyan);
+    margin-bottom: 100px;
+}
+
+.line-img {
+    width: 90%;
+    display: inline-block;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 70px;
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    background-color: var(--primary-Neon-Green);
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 150ms ease-in;
+}
+
+.btn:hover {
+    box-shadow: 0 0 35px 0 var(--primary-Neon-Green);
+
+}
+
+@media only screen and (max-width:450px) {
+    .main-container {
+        width: 90vw;
+        min-width: 250px;
+    }
+}
+
+.attribution p {
+    text-align: center;
+    font-size: calc(var(--Font-size) - 4px);
+}
+
+.attribution {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    bottom: 5px;
+    color: var(--primary-Light-Cyan);
+    bottom: 20px;
+}
+
+.attribution p {
+    text-align: center;
+}
+
+.attribution p a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #2bc8ce;
+}
+
+.attribution p a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 0;
+    bottom: 0;
+    background-color: #ee9818;
+    transition: width 150ms ease-in-out;
+}
+
+.attribution p a:hover::before {
+    width: 100%;
+}
