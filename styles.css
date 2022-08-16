@@ -28,7 +28,7 @@ body {
     position: relative;
     min-height: 290px;
     height: max-content;
-    width: min(100% - 2rem, 550px)
+    width: min(100% - 2rem, 550px);
     background-color: var(--Dark-Grayish-Blue);
     padding: 1.5rem;
     border-radius: .5rem;
