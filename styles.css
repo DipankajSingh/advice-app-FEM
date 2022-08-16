@@ -73,9 +73,14 @@ body {
     transition: box-shadow 150ms ease-in;
 }
 
-.btn:hover, .btn:active {
+.btn:active {
     box-shadow: 0 0 35px 0 var(--primary-Neon-Green);
 
+}
+@media (hover: hover) {
+    .btn:hover {
+        box-shadow: 0 0 35px 0 var(--primary-Neon-Green);
+    }
 }
 
 .attribution p {
